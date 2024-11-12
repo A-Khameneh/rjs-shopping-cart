@@ -3,11 +3,14 @@ import ProductsPage from "./pages/ProductsPage"
 import DetailsPage from "./pages/DetailsPage"
 import Checkout from "./pages/Checkout"
 import PageNotFound from "./pages/PageNotFound"
+import ProductsProvider from "./context/ProductContext"
 
 
 function App() {
 
   return (
+
+    <ProductsProvider>
 
       <Routes>
 
@@ -18,6 +21,8 @@ function App() {
         <Route path="/*" element={ <PageNotFound /> } />
 
       </Routes>
+
+    </ProductsProvider>
 
   )
 }
