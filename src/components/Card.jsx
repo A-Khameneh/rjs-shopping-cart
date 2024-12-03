@@ -15,7 +15,7 @@ export default function Card({ data }) {
 
     const clickHandler = () => {
 
-        dispatch({ type: "add", payload: data })
+        dispatch({ type: "REMOVE_ITEM", payload: data })
 
     }
 
