@@ -55,7 +55,7 @@ const reducer = ( state, action ) => {
 
             }
 
-        case "INCREASE":
+        case "DECREASE":
             const decreaseIndex = state.selectedItems.findIndex( item => item.id === action.payload.id );
             state.selectedItems[ decreaseIndex ].quantity--;
     
