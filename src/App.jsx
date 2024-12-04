@@ -5,27 +5,32 @@ import Checkout from "./pages/Checkout"
 import PageNotFound from "./pages/PageNotFound"
 import ProductsProvider from "./context/ProductContext"
 import CartProvider from "./context/CartContex"
+import Layout from "./layout/Layout"
 
 
 function App() {
 
   return (
-
+ 
     <CartProvider>
     
-      <ProductsProvider>
+        <ProductsProvider>
 
-        <Routes>
+          <Layout>
 
-          <Route index path="/" element={ <Navigate to="/products" replace /> } />
-          <Route path="/products" element={ <ProductsPage /> } />
-          <Route path="/products/:id" element={ <DetailsPage /> } />
-          <Route path="/checkout" element={ <Checkout /> } />
-          <Route path="/*" element={ <PageNotFound /> } />
+            <Routes>
 
-        </Routes>
+              <Route index path="/" element={ <Navigate to="/products" replace /> } />
+              <Route path="/products" element={ <ProductsPage /> } />
+              <Route path="/products/:id" element={ <DetailsPage /> } />
+              <Route path="/checkout" element={ <Checkout /> } />
+              <Route path="/*" element={ <PageNotFound /> } />
 
-      </ProductsProvider>
+            </Routes>
+
+          </Layout>
+
+        </ProductsProvider>
 
     </CartProvider>
 
