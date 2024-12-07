@@ -1,20 +1,3 @@
-.informaion a {
-
-    display: flex;
-    align-items: center;
-    background-color: #fe5d42;
-    padding: 5px 10px;
-    color: #fff;
-    border-radius: 12px;
-
-}
-
-.informaion a svg {
-
-    margin-right: 10px;
-
-}
-
 .container {
 
     display: flex;
@@ -32,6 +15,7 @@
     border: 2px dashed #fe5d42;
     border-radius: 50px;
     margin: 10px;
+    margin-right: 50px;
 
 }
 
@@ -80,6 +64,23 @@
 
     display: flex;
     justify-content: space-between;
+
+}
+
+.information a {
+
+    display: flex;
+    align-items: center;
+    background-color: #fe5d42;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 12px;
+
+}
+
+.information a svg {
+
+    margin-right: 10px;
 
 }
 
