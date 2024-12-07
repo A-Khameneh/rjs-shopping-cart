@@ -2,7 +2,7 @@ import { TbChecklist } from "react-icons/tb";
 import { FaHashtag } from "react-icons/fa6";
 import { BsPatchCheck } from "react-icons/bs";
 
-import { styles } from "./BasketSidebar.module.css";
+import styles from "./BasketSideBar.module.css";
 
 export default function BasketSidebar({ state, clickHandler }) {
 
@@ -13,13 +13,13 @@ export default function BasketSidebar({ state, clickHandler }) {
             <div>
                 <TbChecklist />
                 <p> Total: </p> 
-                <span> { state.total } </span>               
+                <span> { state.total } $ </span>               
             </div>
 
             <div>
                 <FaHashtag />
                 <p> Quantity: </p> 
-                <span> { state.quantity } </span>               
+                <span> { state.itemsCounter } </span>               
             </div>   
 
             <div>
